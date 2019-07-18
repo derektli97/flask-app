@@ -1,0 +1,42 @@
+{% extends "layout.html" %} {% block content%} 
+
+<body>
+        <h1 class="titleHeader" style="text-align: center;"><p>this is home page for me</p></h1>
+        <div class="titleHeader"><p>the past</p></h1>    <div class="container" style="text-overflow: initial;">
+            this was to be a box to talk about who i am.
+          </div></div>
+        <div class="titleHeader"><p>the present</p></h1>
+          <div class="container" style="text-overflow: initial;">
+              i can probably just copy something from my blog that im not using right now.
+            </div></div>
+        <div class="titleHeader"><p>the future</p></h1>
+        <div class="container" style="text-overflow: initial;">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but
+          also the leap into electronic typesetting, remaining essentially
+          unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </div>
+         
+      </body>
+    
+{% for post in posts %}
+<article class="media content-section">
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2" href="#">{{ post.author }}</a>
+            <small class="text-muted">{{ post.date_posted }}</small>
+          </div>
+          <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+          <p class="article-content">{{ post.content }}</p>
+        </div>
+      </article>
+
+
+{% endfor %}
+
+
+{% endblock content %}
