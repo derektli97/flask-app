@@ -1,15 +1,16 @@
-@font-face {
-  font-family: "AvenirNext";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Avenir-Next-Regular.ttf") format("truetype");
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "AvenirNext";
   background: #fafafa;
-  color: #333333;
-  margin-top: 5rem;
+  color: black;
+  margin-top: 0;
+}
+
+header {
+  margin-top: 0;
+  background-color: aquamarine;
 }
 
 h1,
@@ -18,89 +19,28 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444444;
+  color: black;
+  margin-top: 0;
 }
-
-.bg-steel {
-  background-color: #5f788a;
+fi .bg-black {
+  background-color: black;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: black;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: black;
 }
 
 .site-header .navbar-nav .nav-link.active {
-  font-family: "AvenirNext";
   font-weight: 500;
 }
 
 .content-section {
-  font-family: "AvenirNext";
   background: #ffffff;
   padding: 10px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-
-.article-title {
-  font-family: "AvenirNext";
-  color: #444444;
-}
-
-a.article-title:hover {
-  color: #428bca;
-  text-decoration: none;
-}
-
-.article-content {
-  white-space: pre-line;
-}
-
-.article-img {
-  height: 65px;
-  width: 65px;
-  margin-right: 16px;
-}
-
-.article-metadata {
-  padding-bottom: 1px;
-  margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-.article-metadata a:hover {
-  color: #333;
-  text-decoration: none;
-}
-
-.article-svg {
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-}
-
-.account-img {
-  height: 125px;
-  width: 125px;
-  margin-right: 20px;
-  margin-bottom: 16px;
-}
-
-.account-heading {
-  font-size: 2.5rem;
-}
-
-.titleHeader {
-  font-family: "AvenirNext";
-  font-size: 80px;
-}
-
-.container {
-  font-family: "AvenirNext";
-  font-size: 80px;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
 }
